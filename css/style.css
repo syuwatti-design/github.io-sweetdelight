@@ -1,0 +1,379 @@
+
+
+body{
+  font-family:"Josefin Sans","Noto Sans JP",  sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #3c301e;
+  letter-spacing: 0.05em;
+}
+img{
+  width: 100%;
+}
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(241,238,228,0.25);
+  width: 100%;
+  padding: 12px;
+
+}
+
+.header-logo {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 200px;
+
+}
+.header-nav{
+  margin-top: 10px;
+}
+.header-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+}
+
+.header-nav-item {
+
+}
+
+.header-nav-link {
+  color: #fff;
+
+}
+/* fv */
+.fv{}
+.fv-picture{
+  width: 100%;
+}
+/* section */
+.inner {
+  padding:  0 40px;
+
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.section-main {
+  font-size: 40px;
+  display: block;
+
+}
+.section-sub {
+  font-size: 12px;
+  display: block;
+
+}
+
+/* about */
+.about {
+  padding: 40px 0;
+  background-color: #f1eee4;
+
+}
+
+
+
+.about-contents {
+
+}
+.about-text-contents{
+  margin-top: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 2;
+
+}
+.about-text + .about-text{
+  margin-top: 16px;
+}
+/* menu */
+.menu{
+  padding: 80px 0;
+  background-color: #f1eee4;
+}
+.menu-contents {
+
+}
+
+.menu-list {
+
+}
+
+.menu-item {
+
+}
+.menu-item + .menu-item{
+  margin-top: 62px;
+}
+
+.menu-img {
+
+}
+
+.menu-text-contents {
+  text-align: center;
+  padding: 16px 10px;
+
+}
+
+.menu-name {
+
+}
+
+.menu-name-main {
+  font-size: 18px;
+  display: block;
+
+
+}
+
+.menu-name-sub {
+  color: #a98c5f;
+  font-size: 12px;
+  display: block;
+  margin-top: 8px;
+
+}
+
+.menu-text {
+  font-size: 14px;
+  color: #a98c5f;
+  margin-top: 16px;
+
+}
+
+/* shop */
+.section-heading-l{
+  color: #fff;
+}
+.shop {
+  background-image: url(../img/sp/bg-shop.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+
+}
+
+.shop-inner {
+  padding: 0 20px;
+
+}
+
+
+.shop-contents {
+
+}
+
+.shop-text {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+
+}
+
+.shop-form {
+  margin-top: 40px;
+
+}
+
+.shop-form-input {
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  font-family:"Josefin Sans","Noto Sans JP",  sans-serif;
+  padding: 14px;
+
+}
+.form-submit{
+  border: none;
+  border-radius: 4px;
+  font-family:"Josefin Sans","Noto Sans JP",  sans-serif;
+  display: block;
+  margin: 10px auto 0;
+  width: 120px;
+  padding: 12px 10px;
+  color: #fff;
+  background-color: #a98c5f;
+
+}
+
+/* footer */
+.footer {
+  background-color: #3c301e;
+  text-align: center;
+  color: #fff;
+  padding-top: 46px;
+
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin: 0 auto;
+
+}
+
+.footer-text {
+  font-size: 12px;
+
+}
+
+.footer-nav-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 20px;
+
+}
+
+.footer-nav-item {
+
+}
+
+.footer-nav-link {
+
+}
+.sns-img{
+  width: 56px;
+}
+
+.footer-nav-link-text {
+  font-size: 12px;
+  margin-top: 12px;
+
+
+}
+.footer-copy-wrapper{
+  border-top: 1px solid rgba(241,238,228,0.25);
+  padding: 12px;
+  margin-top: 46px;
+
+}
+.footer-copyright{
+  font-size: 12px;
+}
+
+
+/* pc.タブレット */
+@media screen and (min-width:768px){
+  .body{
+    letter-spacing: 0.05em;
+    color: #3c301e;
+  }
+  .header{/**/
+    padding: 16px;
+  }
+  .header-logo{
+    margin: 0;
+  }
+  .header-inner{ /*コンテンツ幅これ以上広げたくない */
+    max-width:1080px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .header-nav-list{
+    gap: 40px;
+  }
+  .header-nav-link{/*ホバーした時の動き*/
+    transition: opacity 0.3s;
+  }
+  .header-nav-link:hover{
+    opacity: 0.7;
+  }
+  /* 共通 */
+  .inner{      /*これも広げたくないやつ*/
+    max-width:1080px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+  .section-main{/*セクションのタイトルサイズ変更*/
+    font-size: 64px;
+  }
+  /* about */
+  .about{        /*ちょっと幅が狭いので調整*/
+    padding: 100px 0;
+  }
+  .about-contents{  /*横並び*/
+    display: flex;
+    gap: 40px;
+    align-items: center;/*テキストの位置を縦に中央へ*/
+  }
+  .about-text-contents{/*これで中央へ完成*/
+    margin-top: 0;
+  }
+  .about-text{   /*サイズ調整*/
+    font-size: 15px;
+  }
+  .about-text + .about-text{
+    margin-top: 30px;
+  }
+  .about-img{  /*写真のサイズ小さいので調整*/
+    width: 300px;
+  }
+  /*  menu */
+  .menu{
+    padding: 0 0 100px;
+  }
+  .menu-list{/*横並び*/
+    display: flex;
+    gap: 20px;
+  }
+  .menu-item + .menu-item{/*これのせいで要素の高さが合わないので消す*/
+    margin-top: 0;
+  }
+  /* shop */
+  .shop{/*画像変更*/
+    background-image: url(../img/bg-shop.png);/*画像にはポジションとサイズがいるので*/
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .shop-inner{/*最大幅の設定でこれ以上広げられなくする、且つこれでformの要素の幅も縮まる*/
+    max-width: 600px;
+    margin: 0 auto;
+
+  }
+  .shop-form{/*横並び*/
+    display: flex;
+    gap: 20px;
+  }
+  .form-submit{/*高さの調整*/
+    margin-top: 0;
+    transition: opacity 0.3s;
+  }
+  .form-submit{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  /* footer */
+  .footer-copyright{
+    font-size: 13px;
+  }
+  .footer-text{/*余白調整*/
+    margin-top: 12px;
+  }
+  .footer-nav-list{/*余白調整*/
+    gap: 40px;
+  }
+
+
+
+}
